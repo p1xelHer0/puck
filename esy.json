@@ -1,0 +1,36 @@
+{
+  "name": "puck",
+  "version": "0.1.0",
+  "description": "puck is a zsh prompt",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "buildDev": "dune build --root . --only-package #{self.name}",
+    "buildsInSource": "_build",
+    "buildEnv": {
+      "ODOC_SYNTAX": "ml"
+    }
+  },
+  "scripts": {
+    "run": "esy x #{self.name}",
+    "dev": "dune build -p #{self.name} --watch",
+    "test": "dune build @test/runtest -f",
+    "format": "dune build @fmt --auto-promote",
+    "doc": "dune build @doc",
+    "doc-path": "echo #{self.target_dir}/default/_doc/_html/index.html",
+    "utop": "dune utop lib -- -implicit-bindings"
+  },
+  "dependencies": {
+    "@opam/bos": "0.2.0",
+    "@opam/dune": "2.5.1",
+    "ocaml": "4.10.0"
+  },
+  "devDependencies": {
+    "@opam/alcotest": "1.1.0",
+    "@opam/merlin": "*",
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
+    "@opam/ocamlformat": "0.14.2",
+    "@opam/odoc": "*",
+    "@opam/utop": "*"
+  }
+}

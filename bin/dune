@@ -1,0 +1,8 @@
+(executable
+ (name main)
+ (public_name puck)
+ (libraries puck)
+ (flags
+  (:standard -open StdLabels)))
+
+(include_subdirs unqualified)

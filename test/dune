@@ -1,0 +1,21 @@
+(library
+ (name puck_test)
+ (libraries alcotest puck)
+ (modules
+  (:standard \ test_runner))
+ (flags
+  (:standard -linkall -g -open StdLabels)))
+
+(executable
+ (name test_runner)
+ (libraries alcotest puck_test)
+ (modules test_runner)
+ (flags
+  (:standard -open StdLabels)))
+
+(rule
+ (alias runtest)
+ (action
+  (run ./test_runner.exe -q --color=always)))
+
+(include_subdirs unqualified)
