@@ -19,4 +19,4 @@ let git_branch () =
 
 (* TODO *)
 let v =
-  if is_git_repo () then "\027[31;40m" ^ git_branch () ^ "\027[0m\n" else ""
+  if is_git_repo () then "\027[31;40m" ^ git_branch () ^ "\027[0m" else ""
