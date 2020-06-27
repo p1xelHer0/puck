@@ -3,6 +3,4 @@
  (public_name puck)
  (libraries puck)
  (flags
-  (:standard -open StdLabels)))
-
-(include_subdirs unqualified)
+  (:standard -open Puck)))

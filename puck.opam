@@ -4,6 +4,7 @@ synopsis: "puck is a zsh prompt"
 description: "puck is a zsh prompt"
 maintainer: ["Pontus Nagy"]
 authors: ["Pontus Nagy"]
+license: "MIT"
 homepage: "https://github.com/p1xelHer0/puck"
 doc: "https://github.com/p1xelHer0/puck/README.md"
 bug-reports: "https://github.com/p1xelHer0/puck/issues"

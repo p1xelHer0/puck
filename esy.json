@@ -7,9 +7,7 @@
     "build": "dune build -p #{self.name}",
     "buildDev": "dune build --root . --only-package #{self.name}",
     "buildsInSource": "_build",
-    "buildEnv": {
-      "ODOC_SYNTAX": "ml"
-    }
+    "buildEnv": { "ODOC_SYNTAX": "ml" }
   },
   "scripts": {
     "run": "esy x #{self.name}",
@@ -23,6 +21,7 @@
   "dependencies": {
     "@opam/bos": "0.2.0",
     "@opam/dune": "2.5.1",
+    "@opam/lwt": "5.3.0",
     "ocaml": "4.10.0"
   },
   "devDependencies": {

@@ -1,8 +1,6 @@
 (library
  (name puck)
  (public_name puck)
- (libraries Str bos)
+ (libraries Str bos lwt)
  (flags
   (:standard -open StdLabels)))
-
-(include_subdirs unqualified)

@@ -11,6 +11,8 @@
 
 (maintainers "Pontus Nagy")
 
+(license "MIT")
+
 (generate_opam_files true)
 
 (package
