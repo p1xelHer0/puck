@@ -1,3 +1,3 @@
-let puck = print_string (Dir.v ^ Git.v ^ Prompt_symbol.v)
+let puck = Dir.v ^ Git.v ^ Prompt_symbol.v
 
-let () = puck
+let _ = print_string puck
